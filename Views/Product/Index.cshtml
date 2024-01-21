@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Product List</h2>
+
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>@product.ProductName</li>
+        <li>@product.ProductDescription</li>
+    }
+</ul>
+
